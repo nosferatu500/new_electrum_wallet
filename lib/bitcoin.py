@@ -77,17 +77,17 @@ class NetworkConstants:
     def set_mainnet(cls):
         cls.TESTNET = False
         cls.WIF_PREFIX = 0x80
-        cls.ADDRTYPE_P2PKH = [0x1C, 0xB8]
-        cls.ADDRTYPE_P2SH = [0x1C, 0xBD]
-        cls.ADDRTYPE_SHIELDED = [0x16, 0x9A]
+        cls.ADDRTYPE_P2PKH = [0x13, 0xB6]
+        cls.ADDRTYPE_P2SH = [0x13, 0xBB]
+        cls.ADDRTYPE_SHIELDED = [0xB7, 0xA1, 0x00]
         cls.SEGWIT_HRP = "bc" #TODO zcl has no segwit
-        cls.GENESIS = "0007104ccda289427919efc39dc9e4d499804b7bebc22df55f8b834301260602"
+        cls.GENESIS = "000095aa3b6953c0757dbd0c6ba828fefab484a15eec5ea6c3d2776e6ea4b38c"
         cls.DEFAULT_PORTS = {'t': '50001', 's': '50002'}
         cls.DEFAULT_SERVERS = read_json('servers.json', {})
         cls.CHECKPOINTS = read_json('checkpoints.json', [])
         cls.EQUIHASH_N = 200
         cls.EQUIHASH_K = 9
-        cls.HEADERS_URL = "http://headers.zcl-electrum.com/blockchain_headers"
+        cls.HEADERS_URL = "https://github.com/nosferatu500/headers/raw/master/blockchain_headers_2"
 
         cls.CHUNK_SIZE = 200
 

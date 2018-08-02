@@ -249,8 +249,8 @@ def android_check_data_dir():
     old_electrum_dir = ext_dir + '/electrum'
     if not os.path.exists(data_dir) and os.path.exists(old_electrum_dir):
         import shutil
-        new_headers_path = android_headers_dir() + '/blockchain_headers'
-        old_headers_path = old_electrum_dir + '/blockchain_headers'
+        new_headers_path = android_headers_dir() + '/blockchain_headers_2'
+        old_headers_path = old_electrum_dir + '/blockchain_headers_2'
         if not os.path.exists(new_headers_path) and os.path.exists(old_headers_path):
             print_error("Moving headers file to", new_headers_path)
             shutil.move(old_headers_path, new_headers_path)
