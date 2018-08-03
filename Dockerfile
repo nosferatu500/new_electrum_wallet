@@ -5,7 +5,7 @@ ENV VERSION 1.0.2
 RUN set -x \
     && apt-get update \
     && apt-get install -y curl \
-    && curl -sL https://github.com/BTCP-community/electrum-cryp/archive/${VERSION}.tar.gz |tar xzv \
+    && curl -sL https://github.com/nosferatu500/new_electrum_wallet/archive/${VERSION}.tar.gz |tar xzv \
     && mv electrum-cryp-${VERSION} electrum-cryp \
     && cd electrum-cryp \
     && apt-get install -y $(grep -vE "^\s*#" packages.txt  | tr "\n" " ") \

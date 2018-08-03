@@ -23,7 +23,7 @@ Development Version
 
 First, clone from Github::
 
-    git clone https://github.com/BTCP-community/electrum-cryp
+    git clone https://github.com/nosferatu500/new_electrum_wallet
     cd electrum-cryp
 
 For Mac:
@@ -148,9 +148,6 @@ Here is a good initial check to determine whether things are working (should suc
     python3 block_headers
 
 --
-
-Here is our roadmap for zk-SNARKs integration: https://github.com/BTCP-community/electrum-cryp/wiki/Shielded-Transactions
-
 
 Original Project Info
 ---------------------
