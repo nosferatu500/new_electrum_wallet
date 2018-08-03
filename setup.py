@@ -49,7 +49,7 @@ if platform.system() in ['Linux', 'FreeBSD', 'DragonFly']:
     ]
 
 setup(
-    name="Electrum-ZCL",
+    name="Electrum-CRYP",
     version=version.ELECTRUM_VERSION,
     install_requires=install_requires,
     tests_require=tests_requires,
@@ -88,12 +88,10 @@ setup(
             'locale/*/LC_MESSAGES/electrum.mo',
         ]
     },
-    scripts=['electrum-zcl'],
+    scripts=['electrum-cryp'],
     data_files=data_files,
-    description="Lightweight Zclassic Wallet",
-    author="BTCP Community",
-    author_email="csulmone@gmail.com",
+    description="Lightweight CrypticCoin Wallet",
     license="MIT Licence",
-    url="https://zclassic.org",
-    long_description="""Lightweight Zclassic Wallet"""
+    url="https://crypticcoin.io",
+    long_description="""Lightweight CrypticCoin Wallet"""
 )

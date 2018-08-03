@@ -2,13 +2,13 @@
 # sudo desktop-file-install electrum.desktop
 
 [Desktop Entry]
-Comment=Lightweight Zclassic Client
+Comment=Lightweight CrypticCoin Client
 Exec=electrum %u
-GenericName[en_US]=Zclassic Wallet
-GenericName=Zclassic Wallet
+GenericName[en_US]=CrypticCoin Wallet
+GenericName=CrypticCoin Wallet
 Icon=electrum
-Name[en_US]=Zclassic Electrum Wallet
-Name=Zclassic Electrum Wallet
+Name[en_US]=CrypticCoin Electrum Wallet
+Name=CrypticCoin Electrum Wallet
 Categories=Finance;Network;
 StartupNotify=false
 Terminal=false

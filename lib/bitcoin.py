@@ -72,7 +72,6 @@ XPUB_HEADERS = {
 
 class NetworkConstants:
 
-    # https://github.com/z-classic/zclassic/blob/master/src/chainparams.cpp#L103
     @classmethod
     def set_mainnet(cls):
         cls.TESTNET = False
@@ -80,7 +79,7 @@ class NetworkConstants:
         cls.ADDRTYPE_P2PKH = [0x13, 0xB6]
         cls.ADDRTYPE_P2SH = [0x13, 0xBB]
         cls.ADDRTYPE_SHIELDED = [0xB7, 0xA1, 0x00]
-        cls.SEGWIT_HRP = "bc" #TODO zcl has no segwit
+        cls.SEGWIT_HRP = "bc" #TODO cryp has no segwit
         cls.GENESIS = "000095aa3b6953c0757dbd0c6ba828fefab484a15eec5ea6c3d2776e6ea4b38c"
         cls.DEFAULT_PORTS = {'t': '50001', 's': '50002'}
         cls.DEFAULT_SERVERS = read_json('servers.json', {})
@@ -91,7 +90,6 @@ class NetworkConstants:
 
         cls.CHUNK_SIZE = 200
 
-    # https://github.com/z-classic/zclassic/blob/master/src/chainparams.cpp#L234
     @classmethod
     def set_testnet(cls):
         cls.TESTNET = True
@@ -99,7 +97,7 @@ class NetworkConstants:
         cls.ADDRTYPE_P2PKH = [0x1D, 0x25]
         cls.ADDRTYPE_P2SH = [0x1C, 0xBA]
         cls.ADDRTYPE_SHIELDED = [0x16, 0xB6]
-        cls.SEGWIT_HRP = "tb" #TODO zcl has no segwit
+        cls.SEGWIT_HRP = "tb" #TODO cryp has no segwit
         cls.GENESIS = "03e1c4bb705c871bf9bfda3e74b7f8f86bff267993c215a89d5795e3708e5e1f"
         cls.DEFAULT_PORTS = {'t': '51001', 's': '51002'}
         cls.DEFAULT_SERVERS = read_json('servers_testnet.json', {})

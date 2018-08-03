@@ -34,7 +34,7 @@ datas = [
 # datas += collect_data_files('keepkeylib')
 
 # We don't put these files in to actually include them in the script but to make the Analysis method scan them for imports
-a = Analysis([home+'electrum-zcl',
+a = Analysis([home+'electrum-cryp',
               home+'gui/qt/main_window.py',
               home+'gui/text.py',
               home+'lib/util.py',
